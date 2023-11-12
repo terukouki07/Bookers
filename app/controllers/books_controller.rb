@@ -5,6 +5,7 @@ class BooksController < ApplicationController
     @books = Book.all
   end
 
+# バリデーションを記述する
   def create
     book = Book.new(book_params)
     book.save
