@@ -9,5 +9,7 @@
     <%= @book.body %>
 </p>
 <!--editへのリンク-->
-<%= link_to "edit", edit_book_path(@book.id) %>
+<%= link_to "Edit", edit_book_path(@book.id) %>
+<!--backのリンク-->
+<%= link_to "Back", books_path %>
 
